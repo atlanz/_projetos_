@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+*{
+    font-family: 'Inter', sans-serif ;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.h5verde{
+    color: green;
+}
+/* =================================== PARTE DE CIMA - OPÇÕES DE CATEGORIA ================================= */
+body{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background-color: #F9E76D;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-senailivre{
+    flex: 1;
+}
+.barradebusca{
+    flex: 2;
+    text-align: center;
+} 
+.navegando, .navegando a {
+    flex: 3;
+    text-align: right;
+    padding: 25px;
+}
+.logo-senailivre img{
+    height: 150px;
+}
+.partedecima{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+a{
+    text-align: center;
+    color: black;
+}
+#barradebusca input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+#barradebusca button{
+    border: none;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+#barradebusca{
+    display: flex;
+}
+/* =================================== PARTE DE BAIXO - OPÇÕES DE PRODUTOS ================================= */
+.corzinha{
+    height: 300px;
+}
+.optionsimgs{
+    border-top: 0.4px solid black;
+    padding: 40px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.conteiner{
+    padding: 20px;
+}
+.produts_oferts{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.produts_oferts div{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.produts_oferts img{
+    width: 65%;
+}
+/* =================================== PARTE DAS CATEGORIAS DE PRODUTOS ================================= */
+.category_produts{
+    background-color: #cdc4c8;
+    height: 300px;
+    padding: 30px;
+}
+.category_produts .category_all{
+    
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.category_produts h3{
+    display: flex;
+    justify-content: center;
+}
+/* =================================== MELHORES PROMOÇÕES ================================= */
+.thebest_oferts .melhoresofertas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.thebest_oferts h3{
+    display: flex;
+    justify-content: center;
+}
+.thebest_oferts{
+    padding: 50px;
+}
+.thebest_oferts .melhoresofertas img{
+    width: 60%;
+}
+.thebest_oferts .soh3 h3{
+    padding-bottom: 50px;
+}
+.veropcoes{
+    padding-top: 30px;
+}
+.melhoresofertas div{
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+/* =================================== RODAPÉ ================================= */
+.rodape .todainfo{
+    background-color: #F9E76D;
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.domeio{
+    display:grid;
+}
+.dofinal{
+    display: grid;
+}
+/* =================================== FIM ================================= */

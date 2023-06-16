@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+/* ============================== CABEÇALHO ================================= */
+header{
+    background-color: #F9E76D;
+}
+.cabecalho{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    flex: 1;
+}
+.barsearch{
+    flex: 2;
+    text-align: center;
+} 
+.navegando, .navegando a{
+    flex: 3;
+    text-align: right;
+    padding: 25px;
+}
+#logo{
+    height: 100px;
+}
+.barsearch input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+.barsearch button{
+    border: none;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+.barsearch{
+    display: flex;
+    margin-left: 50px;
+}
+/* ============================== ********** ================================= */
+.category_comod .comodos img{
+    width: 150px;
+    height: 150px;
+}
+.comodos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.comodos{
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+.comodos div{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.category_comod h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* ============================== ********** ================================= */
+.all_produts div img{
+    width: 300px;
+    height:300px ;
+}
+.all_produts{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.ofert{
+    display: flex;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.element h3, h4, h5,h6{
+    padding: 15px;
+}
+.all_produts a{
+    margin: 50px 50px 50px 50px
+}
+.ofert{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 0px 50px 50px 0px;
+}
+/* ============================== ********** ================================= */
+.all_comods h3{
+    text-align: center;
+    margin-bottom: 30px; 
+}
+.conteinerall_comods{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.conteinerall_comods img{
+    width: 120px;
+    height: 120px;
+}
+.conteinerall_comods h3{
+    text-align: center;
+}
+.conteinerall_comods .imgss{
+    display: flex;
+    justify-content: center;
+}
+/* ============================== ********** ================================= */
+.rodape .todainfo{
+    background-color: #F9E76D;
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.domeio{
+    display:grid;
+}
+.dofinal{
+    display: grid;
+}

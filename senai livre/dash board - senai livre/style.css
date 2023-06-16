@@ -1,0 +1,99 @@
+body, main #um, main #um #umm, main #dois, main #tres, main #quatro{
+    display: grid;
+}
+
+body{
+    grid-template-columns: 1fr 4fr;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+/* ========================================
+menu
+========================================= */
+menu{
+    background: #1E1E2D;
+    height: 100%;
+}
+
+menu img{
+    padding: 30px;
+}
+
+menu nav ul li a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+menu nav ul li{
+    margin: 10px;
+}
+
+menu nav ul li:hover, header button:hover, header nav a:hover{
+    font-size: 17px;
+    font-weight: bold;
+}
+/* ===========================================
+header
+============================================== */
+header{
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.388);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    height: 50px;
+}
+header button{
+    background-color: #F4F6FA;
+    color: #009EF7;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+header nav a{
+    color: black;
+    margin: 10px;
+}
+.menu{
+    display: none;
+}
+/* ======================================================
+main h1
+====================================================== */
+main{
+    background-color: #F4F6FA;
+}
+h1{
+    font-size: 25px;
+   
+    padding: 20px;
+}
+/* ====================================================
+main section um
+====================================================== */
+main #um, main #dois, main #um #umm{
+    grid-template-columns: 1fr 1fr;
+}
+main #um #umm img{
+    height: 200px;
+}
+main #um #doiss img, main #dois img, main #tres img, main #quatro img{
+    height: 400px;
+}
+/* ===============================================
+main section dois
+=============================================== */
+.primeiro{
+    width: 100%;
+}
+/* ===================================
+main section tres
+===================================== */
+main #tres, main #quatro{
+    grid-template-columns: 1fr 3fr;
+}

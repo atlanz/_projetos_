@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    background-color: #F9E76D;
+}
+.cabecalho{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    flex: 1;
+}
+.barsearch{
+    flex: 2;
+    text-align: center;
+} 
+.navegando, .navegando a{
+    flex: 3;
+    text-align: right;
+    padding: 25px;
+}
+#logo{
+    height: 100px;
+}
+.barsearch input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+.barsearch button{
+    border: none;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+.barsearch{
+    display: flex;
+    margin-left: 50px;
+}
+/* ============================== ********** ================================= */
+main{
+    height: 370px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+form input{
+    margin: 10px 10px 10px 10px
+}
+form button{
+    margin: 10px 10px 10px 10px
+}
+
+/* ============================== ********** ================================= */
+.rodape .todainfo{
+    background-color: #F9E76D;
+    height:63px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.domeio{
+    display:grid;
+}
+.dofinal{
+    display: grid;
+}
