@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+    <main>
+        <div class="td">
+            <h1>Calculadora IMC</h1>
+        <form action="" id="formulario">
+            <input step="any" step=".01" type="number" id="peso" placeholder="Insira seu peso">
+            <input step="any" step=".01" type="number" id="altura" placeholder="Insira sua altura">
+            <button type="submit">Enviar dados</button>        
+        </form>
+        </div>
+
+        <div>
+            <span id="exibe"></span>
+            <span id="legenda"></span>
+        </div>
+        
+        <div>
+            <img id="magrinho" src="img/magrinho.png" alt="">
+            <img id="normalzinho" src="img/normalzinho.png" alt="">
+            <img id="pesadinho" src="img/pesadinho.png" alt="">
+            <img id="gordao" src="img/gordão.png" alt="">
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+<!-- =================================================================================== -->
+    <script>
+        var form = document.getElementById("formulario")
+        function enviaForm(event) {
+            event.preventDefault()
+            var peso = document.getElementById("peso")
+            var altura = document.getElementById("altura")
+            var alt = (altura.value * altura.value) 
+            var result = peso.value / alt
+            var exibe = document.getElementById("exibe")
+            var legenda = document.getElementById("legenda")
+
+            if(result < 18.5){
+                var result = result.toFixed(1)
+                var magrinho = document.getElementById("magrinho")
+                magrinho.style.display = "block"
+                exibe.innerHTML = ("IMC: " + result)
+                legenda.innerHTML =  (" Você está abaixo do peso")
+                lengenda.style.color = "yellow"
+
+                
+            }  
+            if(result >= 18.5 && result < 24){
+                var result = result.toFixed(1)
+                var normalzinho = document.getElementById("normalzinho")
+                normalzinho.style.display = "block"
+                exibe.innerHTML = ("IMC: " + result)
+                legenda.innerHTML = (" Você está com o peso normal")
+                lengenda.style.color = "green"
+                
+            } 
+            if(result>= 24 && result < 29){
+                var result = result.toFixed(1)
+                var pesadinho = document.getElementById("pesadinho")
+                pesadinho.style.display = "block"
+                exibe.innerHTML = ("IMC: " + result)
+                legenda.innerHTML = (" Você está acima do peso")
+                lengenda.style.color = "yellow"
+                
+            } 
+            if(result > 29){
+                var result = result.toFixed(1)
+                var gordão = document.getElementById("gordao")
+                gordao.style.display = "block"
+                exibe.innerHTML = ("IMC: " + result)
+                legenda.innerHTML = (" Você está Obeso")
+                lengenda.style.color = "red"
+            }
+        }
+        form.addEventListener("submit", enviaForm)
+    </script>
+
+</body>
+</html>
